@@ -28,9 +28,9 @@ module.exports = {
     'no-unused-vars': [
       1,
       {
-        ignoreRestSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
-      },
+        "ignoreSiblings": true,
+        "argsIgnorePattern": "res|next|^err|event|context|callback"
+      }
     ],
     'prefer-const': [
       'error',
