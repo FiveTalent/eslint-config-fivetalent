@@ -1,26 +1,23 @@
 module.exports = {
-  "extends": [
+  extends: [
     "airbnb",
     "prettier",
-    "prettier/react"
   ],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    // Can I remove these now?
-    "ecmaFeatures": {
-      "impliedStrict": true,
-      "classes": true
-    }
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
   },
-  "env": {
+  env: {
     "browser": true,
     "node": true,
     "jquery": true,
     "jest": true
   },
-  "rules": {
+  rules: {
     "no-debugger": 0,
+    'no-use-before-define': "off",
     "no-alert": 0,
     "no-await-in-loop": 0,
     "no-return-assign": [
@@ -71,15 +68,13 @@ module.exports = {
     "react/prefer-stateless-function": 0,
     "react/forbid-prop-types": 0,
     "react/no-unescaped-entities": 0,
+    "react/function-component-definition": 0,
     "jsx-a11y/accessible-emoji": 0,
     "react/require-default-props": 0,
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx'],
       }
     ],
     "radix": 0,
@@ -111,6 +106,7 @@ module.exports = {
         "trailingComma": "es5",
         "singleQuote": true,
         "printWidth": 120,
+        "endOfLine": 'auto',
       }
     ],
     "jsx-a11y/href-no-hash": "off",
@@ -165,6 +161,8 @@ module.exports = {
       }
     ],
   },
+  '@typescript-eslint/comma-dangle': ['off'],
+  'react/jsx-props-no-spreading': 'off',
   "plugins": [
     "html",
     "prettier",
