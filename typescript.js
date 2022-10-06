@@ -24,8 +24,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-explicit-any': 'off',
-    'no-unused-vars': 0,
-    '@typescript-eslint/no-unused-vars': [1, { ignoreRestSiblings: true }],
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': [
       'warn',
@@ -33,7 +31,6 @@ module.exports = {
         ignoreDeclarationMerge: true,
       },
     ],
-    'no-unused-vars': 0,
     '@typescript-eslint/no-floating-promises': 'off',
   },
   parserOptions: {

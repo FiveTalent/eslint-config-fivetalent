@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    "airbnb",
     "prettier",
   ],
   parserOptions: {
@@ -160,9 +159,9 @@ module.exports = {
         "varsIgnorePattern": "^_"
       }
     ],
+    '@typescript-eslint/comma-dangle': ['off'],
+    'react/jsx-props-no-spreading': 'off',
   },
-  '@typescript-eslint/comma-dangle': ['off'],
-  'react/jsx-props-no-spreading': 'off',
   "plugins": [
     "html",
     "prettier",
