@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fivetalent",
-  "version": "0.0.26",
+  "version": "0.2.1",
   "description": "ESLint and Prettier Config",
   "keywords": [
     "javascript",
