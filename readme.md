@@ -33,7 +33,7 @@ npx install-peerdeps --dev eslint-config-fivetalent
 ```json
 {
   "extends": [
-    "fivetalent"
+    "fivetalent/javascript"
   ]
 }
 ```
@@ -69,7 +69,17 @@ In your `.eslintrc` file, it should look like this:
 ```json
 {
   "extends": [
-    "fivetalent"
+    "fivetalent/javascript"
+  ]
+}
+```
+
+or for typescript
+
+```json
+{
+  "extends": [
+    "fivetalent/typescript"
   ]
 }
 ```
@@ -83,7 +93,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "fivetalent"
+    "fivetalent/javascript"
   ],
   "rules": {
     "no-console": 2,
