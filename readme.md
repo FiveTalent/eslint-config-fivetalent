@@ -33,7 +33,7 @@ npx install-peerdeps --dev eslint-config-fivetalent
 ```json
 {
   "extends": [
-    "fivetalent/javascript"
+    "fivetalent"
   ]
 }
 ```
