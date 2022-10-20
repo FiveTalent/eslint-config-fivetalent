@@ -69,17 +69,7 @@ In your `.eslintrc` file, it should look like this:
 ```json
 {
   "extends": [
-    "fivetalent/javascript"
-  ]
-}
-```
-
-or for typescript
-
-```json
-{
-  "extends": [
-    "fivetalent/typescript"
+    "fivetalent"
   ]
 }
 ```
@@ -93,7 +83,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "fivetalent/javascript"
+    "fivetalent"
   ],
   "rules": {
     "no-console": 2,
