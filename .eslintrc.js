@@ -164,7 +164,6 @@ module.exports = {
         "varsIgnorePattern": "^_"
       }
     ],
-    '@typescript-eslint/comma-dangle': ['off'],
     'react/jsx-props-no-spreading': 'off',
   },
   overrides: [
@@ -264,20 +263,8 @@ module.exports = {
           }
         ],
         "radix": 0,
-        "no-shadow": [
-          2,
-          {
-            "hoist": "all",
-            "allow": [
-              "resolve",
-              "reject",
-              "done",
-              "next",
-              "err",
-              "error"
-            ]
-          }
-        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"],
         "quotes": [
           2,
           "single",
@@ -353,6 +340,16 @@ module.exports = {
         project: './tsconfig.json',
       },
     }
+  ],
+  overrides: [
+    {
+      files: ['test/**'],
+      plugins: ['jest'],
+      rules: {
+        '@typescript-eslint/unbound-method': 'off',
+        'jest/unbound-method': 'error',
+      },
+    },
   ],
   plugins: [
     "html",
