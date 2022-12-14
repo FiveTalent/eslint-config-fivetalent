@@ -339,11 +339,9 @@ module.exports = {
       parserOptions: {
         project: './tsconfig.json',
       },
-    }
-  ],
-  overrides: [
+    },
     {
-      files: ['test/**'],
+      files: ['__test__/**'],
       plugins: ['jest'],
       rules: {
         '@typescript-eslint/unbound-method': 'off',
